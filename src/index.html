@@ -8,14 +8,6 @@
 <body>
 
 
-    <!-- <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> a </button> -->
-<div class="container mx-auto">
-    <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded"> Mi primer Botón con tailwind </button>
-    <button class="bg-blue-500 hover:bg-blue-400 lg:hover:bg-red-500 lg:bg-slate-600 lg:mx-10 sm:bg-yellow-400 sm:mx-6, my-5 text-white font-bold py-2 px-4 rounded"> Botón con tailwind responsive </button>
-    <h1>H1</h1>
-    <h2>H2</h2>
-</div>
-
     <h1 class="text-center font-bold text-4xl">GRIDS</h1>
     <h1 class="text-center font-bold text-2xl mt-5">GRID ROWS</h1>
 
@@ -33,15 +25,92 @@
 <h1 class="text-center font-bold text-2xl mb-5">GRID COLUMNS</h1>
 
 <div class="grid grid-cols-4 text-center font-bold gap-3 m-3">
-    <div class="bg-green-400 py-6">A</div>
-    <div class="bg-green-300 py-6">B</div>
-    <div class="bg-green-600 py-6">C</div>
-    <div class="bg-green-700 py-6">D</div>
-    <div class="bg-green-200 py-6">E</div>
-    <div class="bg-green-500 py-6">F</div>
-    <div class="bg-green-900 py-6">F</div>
-    <div class="bg-green-800 py-6">F</div>
+    <div class="bg-red-400 py-6">A</div>
+    <div class="bg-red-300 py-6">B</div>
+    <div class="bg-red-600 py-6">C</div>
+    <div class="bg-red-700 py-6">D</div>
+    <div class="bg-red-200 py-6">E</div>
+    <div class="bg-red-500 py-6">F</div>
+    <div class="bg-red-900 py-6">F</div>
+    <div class="bg-red-800 py-6">F</div>
 </div>
+
+<h1 class="text-center font-bold text-2xl mb-5">GRID RESPONSIVE</h1>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 text-center font-bold gap-3 m-3">
+    <div class="bg-blue-400 py-6">A</div>
+    <div class="bg-blue-300 py-6">B</div>
+    <div class="bg-blue-600 py-6">C</div>
+    <div class="bg-blue-700 py-6">D</div>
+    <div class="bg-blue-200 py-6">E</div>
+    <div class="bg-blue-500 py-6">F</div>
+    <div class="bg-blue-900 py-6">F</div>
+    <div class="bg-blue-800 py-6">F</div>
+</div>
+
+<h1 class="text-center font-bold text-2xl mb-5">GRID SPAN</h1>
+
+<!-- Span es para ver el espacio q va a ocupar el div -->
+
+<div class="grid grid-cols-4 text-center font-bold gap-3 m-3">
+    <div class="bg-orange-400 py-6 col-span-3">A</div>
+    <div class="bg-orange-300 py-6">B</div>
+    <div class="bg-orange-600 py-6">C</div>
+    <div class="bg-orange-700 py-6">D</div>
+    <div class="bg-orange-200 py-6 col-span-2">E</div>
+    <div class="bg-orange-500 py-6 row-span-11">ROW SPAN</div>
+    <div class="bg-orange-900 py-6 col-span-2">F</div>
+    <div class="bg-orange-800 py-6 row-span-8">ROW SPAN</div>
+</div>
+
+<div class="grid grid-cols-12 text-center font-bold gap-3 m-3">
+    <div class="bg-pink-300 py-6">1</div>
+    <div class="bg-pink-300 py-6">2</div>
+    <div class="bg-pink-300 py-6">3</div>
+    <div class="bg-pink-300 py-6">4</div>
+    <div class="bg-pink-300 py-6">5</div>
+    <div class="bg-pink-300 py-6">6</div>
+    <div class="bg-pink-300 py-6">7</div>
+    <div class="bg-pink-300 py-6">8</div>
+    <div class="bg-pink-300 py-6">9</div>
+    <div class="bg-pink-300 py-6">10</div>
+    <div class="bg-pink-300 py-6">11</div>
+    <div class="bg-pink-300 py-6">12</div>
+</div>
+
+<div class="grid grid-cols-12 text-center font-bold gap-3 m-3">
+    <div class="bg-pink-300 py-6 col-span-4">1</div>
+    <div class="bg-pink-300 py-6 col-span-4">2</div>
+    <div class="bg-pink-300 py-6 col-span-4">3</div>
+</div>
+
+
+<h1 class="text-center font-bold text-2xl mb-5">COL-START COL-END</h1>
+
+<div class="grid grid-cols-4 grid-rows-2 text-center font-bold gap-3 m-3">
+    <div class="bg-yellow-300 py-6 col-start-2">1</div>
+    <div class="bg-yellow-300 py-6">2</div>
+    <div class="bg-yellow-300 py-6 row-end-2">3</div>
+    <div class="bg-yellow-300 py-6">4</div>
+    
+</div>
+
+<h1 class="text-center font-bold text-2xl mb-5">Practica</h1>
+
+<div class="grid grid-cols-4 gap-3 text-center font-bold m-3 grid-rows-2">
+    <div class="bg-fuchsia-300 py-6 ">1</div>
+    <div class="bg-fuchsia-300 py-6">2</div>
+    <div class="bg-fuchsia-300 py-6 col-span-2 row-span-2">3</div>
+    <div class="bg-fuchsia-300 py-6">4</div>
+    <div class="bg-fuchsia-300 py-6">5</div>
+</div>
+
+<h1 class="text-center font-bold text-2xl mb-5">Buttons</h1>
+    <!-- <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> a </button> -->
+    <div class="container mx-auto text-center">
+        <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded"> Mi primer Botón con tailwind </button>
+        <button class="bg-blue-500 hover:bg-blue-400 lg:hover:bg-red-500 lg:bg-slate-600 lg:mx-10 sm:bg-yellow-400 sm:mx-6, my-5 text-white font-bold py-2 px-4 rounded"> Botón con tailwind responsive </button>
+    </div>
 
 
 </body>
