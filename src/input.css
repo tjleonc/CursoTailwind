@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Reutilizacion de componentes: Se pone el nombre que queremos darle a la clase y luego los componentes en tailwind, poniendo un @apply al principio, luego llamamos en el html al componente */
+
+.btn{
+    @apply font-bold text-white border-2 border-white rounded py-2 px-4 bg-gray-600 hover:bg-gray-500 transition duration-500 ease-in-out
+}

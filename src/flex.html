@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class=" bg-gray-400 py-7 relative">
+    <div class="container mx-auto flex">
+        <div class="flex flex-grow">
+            <a href="index.html"><span class="font-montserrat text-[#413e66] text-4xl"> TAILWIND </span></a>
+        </div>
+        <div class="flex flex-grow justify-between items-center">
+            <div>
+                <a href="index.html" class="font-bold text-white mr-4">Inicio</a>
+                <a href="#" class="font-bold text-white mr-4">Flexbox</a> 
+            </div>
+            <div>
+                <a href="#" class="btn mr-4">Iniciar Sesion</a>
+                <a href="#" class="btn mr-4">Registrarse</a> 
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <h1 class="text-center font-bold text-5xl underline decoration-red-500">FLEX</h1>
+
+    <h1 class="text-center font-bold text-3xl mt-8">FLEX COL</h1>
+
+    <div class="flex flex-col">
+        <div class="bg-orange-500 p-3 m-2">1</div>
+        <div class="bg-orange-500 p-3 m-2">2</div>
+        <div class="bg-orange-500 p-3 m-2">3</div>
+    </div>
+    <h1 class="text-center font-bold text-3xl mt-8">FLEX WRAP</h1>
+    <div class="flex flex-wrap-reverse">
+        <div class="bg-yellow-500 p-3 m-2">1</div>
+        <div class="bg-yellow-500 p-3 m-2">2</div>
+        <div class="bg-yellow-500 p-3 m-2">3</div>
+    </div>
+    <h1 class="text-center font-bold text-3xl my-8">JUSTIFY CONTENT</h1>
+    <h1 class="text-center font-bold text-1xl my-8">JUSTIFY BETWEEN</h1>
+    <div class="flex justify-between bg-gray-500">
+        <div class="bg-green-500 p-3 m-2">1</div>
+        <div class="bg-green-500 p-3 m-2">2</div>
+        <div class="bg-green-500 p-3 m-2">3</div>
+    </div>
+    <h1 class="text-center font-bold text-1xl my-8">JUSTIFY AROUND</h1>
+    <div class="flex justify-around bg-gray-500">
+        <div class="bg-blue-500 p-3 m-2">1</div>
+        <div class="bg-blue-500 p-3 m-2">2</div>
+        <div class="bg-blue-500 p-3 m-2">3</div>
+    </div>
+    <h1 class="text-center font-bold text-1xl my-8">JUSTIFY START</h1>
+    <div class="flex justify-start bg-gray-500">
+        <div class="bg-fuchsia-500 p-3 m-2">1</div>
+        <div class="bg-fuchsia-500 p-3 m-2">2</div>
+        <div class="bg-fuchsia-500 p-3 m-2">3</div>
+    </div>
+    <h1 class="text-center font-bold text-1xl my-8">JUSTIFY END</h1>
+    <div class="flex justify-end bg-gray-500">
+        <div class="bg-purple-500 p-3 m-2">1</div>
+        <div class="bg-purple-500 p-3 m-2">2</div>
+        <div class="bg-purple-500 p-3 m-2">3</div>
+    </div>
+    <h1 class="text-center font-bold text-1xl my-8">JUSTIFY CENTER</h1>
+    <div class="flex justify-center bg-gray-500 mb-5">
+        <div class="bg-red-500 p-3 m-2">1</div>
+        <div class="bg-red-500 p-3 m-2">2</div>
+        <div class="bg-red-500 p-3 m-2">3</div>
+    </div>
+    <h1 class="text-center font-bold text-3xl my-8">ALIGN ITEMS</h1>
+
+    <div class="flex bg-gray-500 mb-5 items-stretch h-32">
+        <div class="bg-green-300 p-3 m-2">1</div>
+        <div class="bg-green-300 p-3 m-2">2</div>
+        <div class="bg-green-300 p-3 m-2">3</div>
+        <div class="flex items-center pl-5">
+            <p class="font-bold text-3xl">Item Stretch</p>
+        </div>
+    </div>
+    <div class="flex bg-gray-500 mb-5 items-start h-32">
+        <div class="bg-orange-300 p-3 m-2">1</div>
+        <div class="bg-orange-300 p-3 m-2">2</div>
+        <div class="bg-orange-300 p-3 m-2">3</div>
+        <div class="flex items-center pt-10 pl-5">
+            <p class="font-bold text-3xl">Item Start</p>
+        </div>
+    </div>
+    <div class="flex bg-gray-500 mb-5 items-center h-32">
+        <div class="bg-red-300 p-3 m-2">1</div>
+        <div class="bg-red-300 p-3 m-2">2</div>
+        <div class="bg-red-300 p-3 m-2">3</div>
+        <div class="flex items-center pl-5">
+            <p class="font-bold text-3xl">Item center</p>
+        </div>
+    </div>
+    <div class="flex bg-gray-500 mb-5 items-end h-32">
+        <div class="bg-yellow-300 p-3 m-2">1</div>
+        <div class="bg-yellow-300 p-3 m-2">2</div>
+        <div class="bg-yellow-300 p-3 m-2">3</div>
+        <div class="flex items-center pl-5 pb-10">
+            <p class="font-bold text-3xl">Item end</p>
+        </div>
+    </div>
+    <div class="flex bg-gray-500 mb-5 items-baseline h-32">
+        <div class="bg-fuchsia-300 p-3 m-2">1</div>
+        <div class="bg-fuchsia-300 p-3 m-2">2</div>
+        <div class="bg-fuchsia-300 p-3 m-2">3</div>
+        <div class="flex items-center pl-5 py-10">
+            <p class="font-bold text-3xl">Item baseline</p>
+        </div>
+    </div>
+<h1 class="text-center font-bold text-3xl my-8">ALIGN CONTENT</h1>
+
+<!-- Para trabajar con ALIGN CONTENT hay que usar flex-wrap siosi -->
+
+<h1 class="text-center font-bold text-1xl my-8">CONTENT START</h1>
+
+<div class="flex  bg-gray-500 mb-5 h-64 flex-wrap content-start">
+    <div class="bg-fuchsia-400 p-3 m-2">1</div>
+    <div class="bg-fuchsia-400 p-3 m-2">2</div>
+    <div class="bg-fuchsia-400 p-3 m-2">3</div>
+</div>
+
+<h1 class="text-center font-bold text-1xl my-8">CONTENT CENTER</h1>
+
+<div class="flex bg-gray-500 mb-5 h-64 flex-wrap content-center">
+    <div class="bg-red-400 p-3 m-2">1</div>
+    <div class="bg-red-400 p-3 m-2">2</div>
+    <div class="bg-red-400 p-3 m-2">3</div>
+</div>
+
+<h1 class="text-center font-bold text-1xl my-8">CONTENT END</h1>
+
+<div class="flex bg-gray-500 mb-5 h-64 flex-wrap content-end">
+    <div class="bg-yellow-400 p-3 m-2">1</div>
+    <div class="bg-yellow-400 p-3 m-2">2</div>
+    <div class="bg-yellow-400 p-3 m-2">3</div>
+</div>
+
+<h1 class="text-center font-bold text-1xl my-8">CONTENT BETWEEN</h1>
+
+<div class="flex bg-gray-500 mb-5 h-64 flex-wrap content-between">
+    <div class="bg-green-400 p-3 m-2">1</div>
+    <div class="bg-green-400 p-3 m-2">2</div>
+    <div class="bg-green-400 p-3 m-2">3</div>
+</div>
+
+<h1 class="text-center font-bold text-1xl my-8">CONTENT AROUND</h1>
+
+<div class="flex bg-gray-500 mb-5 h-64 flex-wrap content-around">
+    <div class="bg-blue-400 p-3 m-2">1</div>
+    <div class="bg-blue-400 p-3 m-2">2</div>
+    <div class="bg-blue-400 p-3 m-2">3</div>
+</div>
+
+<h1 class="text-center font-bold text-3xl my-8">ALIGN SELF (HIJOS)</h1>
+
+<!-- Se trabaja con el items-start solamente -->
+
+<div class="flex  bg-gray-500 mb-5 h-64 flex-wrap items-start">
+    <div class="bg-fuchsia-700 text-white p-3 m-2 self-end">1</div>
+    <div class="bg-fuchsia-700 text-white p-3 m-2 self-baseline">2</div>
+    <div class="bg-fuchsia-700 text-white p-3 m-2 self-center">3</div>
+    <div class="bg-fuchsia-700 text-white p-3 m-2 self-start">3</div>
+    <div class="bg-fuchsia-700 text-white p-3 m-2 self-stretch">3</div>
+</div>
+
+<!-- revisar los anchos disponibles  -->
+
+</body>
+
+</html>
